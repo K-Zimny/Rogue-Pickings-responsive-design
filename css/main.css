@@ -229,3 +229,76 @@ footer span {
 	color: #77a466;
 	font-size: .875em;
 }
+
+@media all and (min-width: 768px){
+	/* Tablet styles */
+	
+	.bottom-section{
+		display: flex;
+		justify-content: center;
+	}
+
+	.section-one h3 {
+	padding: 10px 0;
+	} 
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	} 
+
+	.section-two h3,
+	.section-three h3 {
+		padding: 10px 30px;
+	}
+
+	p{
+		padding: 0 30px;
+	}
+	
+	.section-one li{
+		padding-right: 10px;
+	}
+}
+
+@media all and (min-width: 1200px){
+	/* Desktop styles */
+
+	header{
+		display: flex;
+		justify-content: center;
+		/* flex-flow: row nowrap; */
+		width: 100%;
+		border-bottom: 3px solid #77a466;
+	}
+
+	header h1{
+		padding: 2% 0;
+		/* text-align: left; */
+		display: flex;
+		align-items: center;
+		width:100%;
+	}
+
+	header nav ul li a{	
+		display: inline;
+		/* justify-content: center; */
+		/* align-items: center; */
+		/* flex-flow: row wrap; */
+	
+			/* sets items to flex and has them centered and on a new lien. also style elements  */
+	}
+
+	nav{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width:100%;
+				border-bottom: 3px solid #77a466;
+	}
+
+	footer{
+		width: 100%;
+	}
+
+}
