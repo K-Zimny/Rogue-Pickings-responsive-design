@@ -1,22 +1,42 @@
 html{
-	font-size: 16px;
+	font-size: 16px; /*sets my defualt font size, used for em font sizes throughout the page*/
 }
 
 body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif; /*sets font family for page*/
+	display: flex;	
+		/*Defines the body element as a flex object*/
+	justify-content: center;	
+		/*states that its children elements shall be center aligned horizontally*/
+	align-items: center;	
+		/* states that its children elements shall be center vertically */
+	
+		/* we have the main body tag and are declaring that as a flex box and all the contnet of body, which is the class container, will be aligned vertically and horizontally  */
+	/* this makes the container class and its contnets be centered on the page */
 }
 
 .container{
-	max-width: 1200px;
+	max-width: 1200px; 
+		/* defines the max width of the container */
 	width:90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
+		/* defines the width of the container class. it will take up 90% of its parent element, body */
+		/* Kinda works like setting a margin, but maybe an easier parameter to use? */
+	/* margin: 0 auto; */
+		/* not needed. margins seems to be better defined via the width parameter */
+
+	/* display: flex; */
+			/*Defines the container class element as a flex object*/
+
+	/* justify-content: center; */
+			/*states that its children elements shall be center aligned horizontally*/
+
 	/* align-items: center; */
-	flex-flow: row wrap;
+		/* does not seem to be needed */
+
+	/* flex-flow: row wrap; */
+		/* defines direction as row and wraps content  */
+
+	whats the point of this? Maybe if i want to use a different styling flex element in stead if the defualt stuff?
 }
 
 h1,
@@ -42,16 +62,25 @@ p {
     /* padding: 0 30px; */
 }
 
+	/* Line height and font size for my heading and paragraph elements */
+
 /*The widths are in a percentage!*/
 header {
 	/* height: 110px; */
+		/* No fixed heights. */
 	border-bottom: 3px solid #77a466;
+		/* style element  */
 	width: 100%;
-	margin: 0 auto;
-	display: flex;
+		/* defines the width of the header element, and we want this to be the same size as the container */
+	/* margin: 0 auto; */
+		/* not needed bc flex-box */
+
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: row wrap; */
+
+	/* not sure if I need this, I seem to get the same result without it */
 }
 
 header h1 {
@@ -60,17 +89,25 @@ header h1 {
 	width:100%;
 	text-align: center;
 	border-bottom: 3px solid #77a466;
+
+	/* style elements  */
 }
 header h1 span {
 	color: #77a466;
+
+		/* style elements  */
 }
 
 header nav {
 	padding: 1% 0;
+
+		/* style elements  */
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+
+		/* style elements  */
 }
 header nav ul li {
 	text-transform: uppercase;
@@ -78,24 +115,33 @@ header nav ul li {
 	font-size: .875em;
 	padding: 0 10px;
 	display: inline;
+
+		/* style elements  */
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+
+		/* sets items to flex and has them centered and on a new lien. also style elements  */
 }
 
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	display: flex;
+	/* margin: 0 auto; */
+
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: row wrap; */
+
+		/* not sure if I need this, I seem to get the same result without it */
+
 }
 
 .main-image {
@@ -169,10 +215,13 @@ footer {
 	width: 90%;
 	margin: 0 auto;
 	text-align: center;
-	display: flex;
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: row wrap; */
+
+		/* not sure if I need this, I seem to get the same result without it */
+
 }
 footer span {
 	font-family: 'Galada', cursive;
